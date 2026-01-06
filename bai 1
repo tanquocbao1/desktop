@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập buổi 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">MY WEBSITE</div>
+    <button id="login">Login</button>
+</div>
+
+<div class="menu">
+    <a href="#">Trang chủ</a>
+    <a href="#">Giới thiệu</a>
+    <a href="#">Khóa học</a>
+    <a href="#">Liên hệ</a>
+</div>
+
+<div class="main">
+
+    <div class="leftSidebar">
+        <div class="sidebar-item">HTML</div>
+        <div class="sidebar-item">CSS</div>
+        <div class="sidebar-item">JavaScript</div>
+        <div class="sidebar-item">ReactJS</div>
+    </div>
+
+    <div class="content">
+        <h2>Bài viết nổi bật</h2>
+
+        <div class="card">
+            <span class="tag-hot">HOT</span>
+            <h3>Học HTML cơ bản</h3>
+            <p>
+                HTML là ngôn ngữ đánh dấu siêu văn bản giúp bạn xây dựng cấu trúc website.
+                Đây là nền tảng quan trọng trước khi học CSS và JavaScript.
+            </p>
+            <button>Xem thêm</button>
+        </div>
+
+        <div class="card">
+            <span class="tag-hot">HOT</span>
+            <h3>CSS Selector & Box Model</h3>
+            <p>
+                CSS giúp làm đẹp website bằng cách định dạng màu sắc, bố cục, font chữ.
+                Box Model giúp bạn kiểm soát margin, border và padding chính xác.
+            </p>
+            <button>Xem thêm</button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2026 - Bài tập buổi 6
+</div>
+
+</body>
+</html>
+
+  css
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.header{
+    background-color: #0cb3ff;
+    height: 80px;
+    position: relative;
+}
+
+.logo{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#login{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+/* MENU */
+.menu{
+    background-color: red;
+    text-align: center;
+}
+
+.menu a{
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover{
+    background: black;
+}
+
+.menu a:active{
+    background: green;
+}
+
+/* MAIN LAYOUT */
+.main{
+    width: 100%;
+    overflow: hidden;
+}
+
+/* SIDEBAR */
+.leftSidebar{
+    width: 25%;
+    float: left;
+    background-color: beige;
+    height: 400px;
+    padding: 10px;
+}
+
+.sidebar-item{
+    background: white;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* CONTENT */
+.content{
+    width: 75%;
+    float: right;
+    background-color: blueviolet;
+    height: 400px;
+    padding: 10px;
+}
+
+.content h2{
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* CARD */
+.card{
+    background: white;
+    border: 3px solid #ccc;
+    padding: 15px;
+    margin: 15px 0;
+    position: relative;
+}
+
+.card p{
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1.5;
+    font-family: Arial;
+    margin-bottom: 10px;
+}
+
+.card button{
+    padding: 8px 12px;
+    background: #0cb3ff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* HOT TAG */
+.tag-hot{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+/* FOOTER */
+.footer{
+    clear: both;
+    background-color: chocolate;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+
+
+  
